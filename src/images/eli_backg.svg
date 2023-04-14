@@ -1,0 +1,14 @@
+<svg id="eli_backg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1922.416" height="1078.833" viewBox="0 0 1922.416 1078.833">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4a96a2"/>
+      <stop offset="1" stop-color="#01dcff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6c18bf" stop-opacity="0"/>
+      <stop offset="1" stop-color="#115ec4" stop-opacity="0.259"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_25" data-name="Path 25" d="M4397,2871H6319.416v912.156L4859.559,3949.833,4397,3783.156Z" transform="translate(-4397 -2871)" fill="url(#linear-gradient)"/>
+  <path id="Subtraction_7" data-name="Subtraction 7" d="M700.858,887H386.227V705.073h-71.6V535.82H620.184v-248.9H973.135V584.695h33.277V286.917H973.135V181.02h315.636V0H1675V403.676H1359.362V181.02h-70.59V403.676h70.59V584.695h-352.95v105.9H700.858V535.82H620.184V690.592h80.674V887ZM314.63,887H0V705.073H314.63V887Z" transform="translate(245 97)" fill="url(#linear-gradient-2)"/>
+</svg>
