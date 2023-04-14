@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 
 const Home = () => {
 	return (
@@ -10,6 +11,7 @@ const Home = () => {
 			exit={{ opacity: 0 }}
 			transition={{ duration: 3 }}
 		>
+			<Navbar />
 			<Footer />
 		</motion.div>
 	);

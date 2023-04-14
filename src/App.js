@@ -8,6 +8,7 @@ import React from "react";
 // import Mobilenav from "./components/MobileNav/Mobilenav";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import Services from "./pages/Services";
 import NoPage from "./pages/NoPage";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 				<Routes>
 					<Route path="/" exact element={<Home />} />
 					<Route path="/portfolio" element={<Portfolio />} />
+					<Route path="/our-services" element={<Services />} />
 					<Route path="/about-us" element={<About />} />
 					<Route path="/contact-us" element={<Contact />} />
 					<Route path="*" element={<NoPage />} />
@@ -30,6 +32,5 @@ function App() {
 		</div>
 	);
 }
-
 
 export default App;
