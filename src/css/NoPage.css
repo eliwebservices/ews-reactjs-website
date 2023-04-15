@@ -1,0 +1,44 @@
+.page_404_text {
+	font-size: 40px;
+	justify-content: center;
+	color: #00252a;
+}
+
+.page-404-image {
+	width: 65%;
+	margin: auto;
+}
+
+.page-404-image img {
+	width: 100%;
+}
+
+.page_404_btn {
+	justify-content: center;
+}
+
+.page_404_btn button {
+	width: inherit;
+	background: #002521;
+	border: none;
+	border-radius: 50px;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.page_404_text,
+.page-404-image,
+.page_404_btn {
+	margin-bottom: 20px;
+}
+
+.page_404_text:nth-child(1) {
+	margin-top: 10px;
+}
+
+.page_404_text:nth-child(3) {
+	text-transform: uppercase;
+	font-weight: 500;
+}
