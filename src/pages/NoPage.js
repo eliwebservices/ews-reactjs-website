@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Ews404 from "../images/ews-404.svg";
@@ -10,6 +10,9 @@ import MobileNavbar from "../components/MoblieNavbar/MobileNavbar";
 import Footer from "../components/Footer/Footer";
 
 const NoPage = () => {
+	useEffect(() => {
+		document.title = "Page Not Found | Eli Web Services";
+	}, []);
 	const navigate = useNavigate();
 	// console.log(navigate);
 

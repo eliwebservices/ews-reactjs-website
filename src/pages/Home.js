@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
@@ -14,6 +14,10 @@ const Home = () => {
 	function closeDropdown() {
 		setOpen(!open);
 	}
+
+	useEffect(() => {
+		document.title = "Home | Eli Web Services";
+	}, []);
 
 	return (
 		<motion.div
