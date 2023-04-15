@@ -24,7 +24,11 @@ header {
 
 .hamburger {
 	display: none;
-	color: #fff;
+	color: #00252a;
+}
+
+.hamburger svg {
+	transform: rotateY(180deg);
 }
 
 .navmenu_div {
@@ -97,14 +101,22 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+	.logo-container {
+		width: 25%;
+	}
 	.hamburger {
-		display: block;
+		display: flex;
+		/* align-items: center; */
 		position: absolute;
 		top: 0;
 		right: 0;
 		transform: translate(-100%, 75%);
 		font-size: 1.8rem;
 		cursor: pointer;
+	}
+
+	.hamburger svg {
+		font-size: 35px;
 	}
 
 	.navmenu {

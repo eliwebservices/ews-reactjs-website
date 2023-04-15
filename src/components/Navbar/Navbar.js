@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "../../images/eli1.png";
 import { Link } from "react-router-dom";
-// import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { FaBars } from "react-icons/fa";
+import Sort from "@mui/icons-material/Sort";
 import "./Navbar.css";
 import Container from "react-bootstrap/Container";
 
@@ -14,7 +15,9 @@ const Navbar = (props) => {
 						<img src={logo} alt="logo" />
 					</Link>
 				</div>
-				{/* <faBars className="hamburger" onClick={props.toggleBtn} /> */}
+				<div className="hamburger" onClick={props.toggleBtn}>
+					<Sort />
+				</div>
 				<div className="navmenu_div">
 					<ul className="navmenu">
 						<li>

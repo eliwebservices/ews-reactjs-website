@@ -1,0 +1,139 @@
+.DropdownContainer {
+	position: fixed;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	display: grid;
+	align-items: center;
+	top: 0;
+	left: 0;
+	transition: 0.3s ease-in-out;
+	/* margin-left: 100px; */
+}
+
+.CloseBtnContainer {
+	position: absolute;
+	top: 1.7rem;
+	right: 1.7rem;
+	background: transparent;
+	font-size: 2.5rem;
+	cursor: pointer;
+	outline: none;
+}
+
+.CloseIcon {
+	color: #00252a;
+	transform: rotate(45deg);
+	/* font-weight: 100; */
+}
+
+.DropdownWrapper {
+	color: #00252a;
+}
+
+.DropdownMenu {
+	display: block;
+}
+
+.DropdownMenu ul li {
+	list-style: none;
+}
+
+.DropdownMenu ul li a {
+	margin: 35px 0;
+	display: block;
+	text-align: center;
+	font-size: 2rem;
+	text-decoration: none;
+	list-style: none;
+	transition: 0.2s ease-in-out;
+	color: #00252a;
+	cursor: pointer;
+	text-transform: lowercase;
+}
+
+.mob_navmenu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.mob-contact-us-btn a {
+	border-radius: 50px;
+	border: 2px solid #00252a;
+	outline: none;
+	background: #00252a;
+	color: #fff !important;
+	margin-left: 10px;
+	padding: 10px 27px;
+}
+
+.DropdownMenu ul li .home::before,
+.DropdownMenu ul li .about::after,
+.DropdownMenu ul li .services::before,
+.DropdownMenu ul li .portfolio::after {
+	content: "";
+	width: 45px;
+	height: 2px;
+	display: inline-block;
+	/* margin: 0 10px 10px 10px; */
+}
+
+.DropdownMenu ul li .home::before {
+	background: #dd2a7b;
+}
+
+.DropdownMenu ul li .about::after {
+	background: #ffbd1b;
+}
+
+.DropdownMenu ul li .services::before {
+	background: #089ba5;
+}
+
+.DropdownMenu ul li .portfolio::after {
+	background: #8134af;
+}
+
+.DropBtnWrap {
+	display: flex;
+	justify-content: center;
+}
+
+.DropBtnWrap .DropdownRoute {
+	/*margin: 80px 0; */
+	border-radius: 50px;
+	background: #256ce1;
+	white-space: nowrap;
+	padding: 16px 64px; /**/
+	color: #ffffff;
+	font-size: 25px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.DropBtnWrap .DropdownRoute:hover {
+	transition: all 0.2s ease-in-out;
+	background: #fff;
+	color: #010606;
+}
+
+/* @media screen and (max-width: 1025px) {
+	.DropdownContainer {
+		display: none;
+	}
+} */
+
+@media screen and (max-width: 780px) {
+	/* .DropdownContainer {
+		display: block;
+	} */
+	.DropdownMenu {
+		grid-template-rows: repeat(6, 60px);
+	}
+}
