@@ -11,15 +11,15 @@ import {
 	faTwitter,
 	faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { Phone, MailOutlined } from "@mui/icons-material";
 
 const Footer = () => {
 	return (
 		<div>
-			<section className="footer_section">
-				<div className="divider_before"></div>
+			<Container fluid className="footer_section">
 				<Container className="footer_bt_cn">
 					<Row className="footer_content">
-						<Col lg={4} md={6} className="footer_logo">
+						<Col lg={4} md={6} className="footer_socials">
 							<h5>Follow us</h5>
 							<div className="social_handles">
 								<a href="https://web.facebook.com/eliwebservices">
@@ -42,9 +42,9 @@ const Footer = () => {
 						<Col lg={4} md={6} className="contact_info">
 							<div className="footer_contact_container">
 								<h5>Contact us</h5>
-								<p>info@eliwebdev.com</p>
-								<p>P.O BOX MS 102 MILE7, ACCRA-GHANA</p>
-								<p>+233(0)201599071</p>
+								<p><MailOutlined/> : info@eliwebservices.com</p>
+								{/* <p>P.O BOX MS 102 MILE7, ACCRA-GHANA</p> */}
+								<p><Phone/> : +233(0)201599071</p>
 							</div>
 						</Col>
 
@@ -72,7 +72,7 @@ const Footer = () => {
 						</Col>
 
 						<Col lg={12} md={12} sm={12} className="logo-slogan">
-							<img src="../img/footer_logo_.png" alt="" />
+							{/* <img src="../img/footer_logo_.png" alt="" /> */}
 							<p className="footer-slogan">...building Visions Together</p>
 						</Col>
 
@@ -81,7 +81,7 @@ const Footer = () => {
         </div> --> */}
 					</Row>
 				</Container>
-			</section>
+			</Container>
 		</div>
 	);
 };

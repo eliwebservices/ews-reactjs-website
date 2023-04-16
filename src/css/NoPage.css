@@ -42,3 +42,23 @@
 	text-transform: uppercase;
 	font-weight: 500;
 }
+
+
+/* Tablet */
+@media (max-width: 990px) {
+
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 768px) {
+	.page_404_text {
+		font-size: 25px;
+	}
+	.page-404-image {
+		width: 95%;
+	}
+	.page_404_btn button {
+		padding: 10px 35px;
+		font-size: 18px;
+	}
+}
