@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../images/eli1.png";
 import { Link } from "react-router-dom";
 // import { FaBars } from "react-icons/fa";
@@ -7,8 +7,19 @@ import "./Navbar.css";
 import Container from "react-bootstrap/Container";
 
 const Navbar = (props) => {
+	const [sticky, setSticky] = useState(false);
+
+	useEffect(() => {
+		const scrollEffect = () => {
+			setSticky(window.scrollY > 10);
+		};
+
+		window.addEventListener("scroll", scrollEffect);
+		return () => window.removeEventListener("scroll", scrollEffect);
+	});
+
 	return (
-		<header data-scroll-section>
+		<header data-scroll-section className={`${sticky ? "sticky" : ""}`}>
 			<Container className="navigation">
 				<div className="logo-container">
 					<Link to="/">
@@ -21,12 +32,12 @@ const Navbar = (props) => {
 				<div className="navmenu_div">
 					<ul className="navmenu">
 						<li>
-							<Link to="/home" className="nav_link">
+							<Link to="/" className="nav_link">
 								home
 							</Link>
 						</li>
 						<li>
-							<Link to="/about" className="nav_link">
+							<Link to="/about-us" className="nav_link">
 								about us
 							</Link>
 						</li>

@@ -1,0 +1,95 @@
+/* * {
+	color: #00252a;
+} */
+.hero-section {
+	background: url("../images/group-working-together.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-position: center; */
+	color: #00252a;
+	height: 100vh;
+	position: relative;
+	z-index: 3;
+	transition: 0.3s ease-in-out;
+	/* padding-bottom: 81px; */
+}
+
+.text_and_pic {
+	height: inherit;
+	justify-content: center;
+	flex-direction: column;
+	display: flex;
+	position: relative;
+}
+
+.header_text h1 {
+	font-size: 68px;
+	font-weight: 200;
+}
+/* .header_text {
+	margin-top: 100px;
+} */
+
+.header_text span {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+/* Hero Section Button */
+.start-btn-div {
+	margin: 42px 0;
+}
+.start-btn-div a {
+	text-decoration: none;
+}
+
+.start-btn {
+	padding: 12px 16px;
+	border-radius: 50px;
+	color: #ff4062;
+	font-size: 22px;
+	border: 3px solid #ff4062;
+	transition: all 0.3s;
+}
+
+.start-btn:hover {
+	color: #fff;
+	background-color: #ff4062;
+}
+
+/* Hero Gradient Overlay */
+.hero-overlay {
+	position: absolute;
+	background: linear-gradient(145deg, #ffffff, #ffffffce, #ffffff00);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* Tablet */
+@media (max-width: 990px) {
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 768px) {
+	.hero-section {
+		background-position: center;
+	}
+	.header_text h1 {
+		font-size: 50px;
+		text-align: center;
+	}
+
+	.start-btn-div {
+		text-align: center;
+	}
+
+	.start-btn {
+		font-size: 18px;
+		border: 2.5px solid #ff4062;
+		color: #fff;
+		background-color: #ff4062;
+		padding: 15px 35px;
+	}
+}

@@ -1,6 +1,6 @@
 .DropdownContainer {
 	position: fixed;
-	z-index: 20;
+	z-index: 120;
 	width: 100%;
 	height: 100%;
 	background: #fff;
@@ -58,6 +58,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 0;
 }
 
 .mob-contact-us-btn a {
@@ -136,5 +137,8 @@
 	} */
 	.DropdownMenu {
 		grid-template-rows: repeat(6, 60px);
+	}
+	.DropdownMenu ul li a {
+		margin: 22px 0;
 	}
 }

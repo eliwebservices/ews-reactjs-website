@@ -19,12 +19,12 @@ const MobileNavbar = (props) => {
 				<div className="DropdownMenu">
 					<ul className="mob_navmenu">
 						<li>
-							<Link to="/home" className="mob_nav_link home">
+							<Link to="/" className="mob_nav_link home">
 								home
 							</Link>
 						</li>
 						<li>
-							<Link to="/about" className="mob_nav_link about">
+							<Link to="/about-us" className="mob_nav_link about">
 								about us
 							</Link>
 						</li>
