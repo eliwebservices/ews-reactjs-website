@@ -111,7 +111,7 @@ header.sticky {
 	text-decoration: none;
 }
 
-/* Tablet */
+/********************* Tablet *********************/
 @media (max-width: 990px) {
 	.logo-container {
 		width: 15%;
@@ -136,7 +136,7 @@ header.sticky {
 	}
 }
 
-/* Mobile Phone */
+/********************* Mobile Phone *********************/
 @media screen and (max-width: 768px) {
 	.logo-container {
 		width: 25%;

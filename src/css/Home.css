@@ -1,3 +1,17 @@
+/* Common CSS */
+.services_section{
+	margin-bottom: 90px;
+}
+.explore_heading,
+.service_heading {
+	text-align: center;
+}
+.heading_text {
+	font-size: 40px;
+	color: #00252a;
+	display: inline-block;
+	/* margin-top: 50px; */
+}
 /* * {
 	color: #00252a;
 } */
@@ -11,6 +25,7 @@
 	position: relative;
 	z-index: 3;
 	transition: 0.3s ease-in-out;
+	margin-bottom: 50px;
 	/* padding-bottom: 81px; */
 }
 
@@ -22,20 +37,20 @@
 	position: relative;
 }
 
+.header_text {
+	margin-top: 50px;
+}
 .header_text h1 {
 	font-size: 68px;
 	font-weight: 200;
 }
-/* .header_text {
-	margin-top: 100px;
-} */
 
 .header_text span {
 	text-transform: capitalize;
 	font-weight: 700;
 }
 
-/* Hero Section Button */
+/********************** Hero Section Button **********************/
 .start-btn-div {
 	margin: 42px 0;
 }
@@ -67,11 +82,360 @@
 	right: 0;
 }
 
-/* Tablet */
-@media (max-width: 990px) {
+/********************** Services Section **********************/
+.services_section:hover .heading_text::after,
+.explore_section:hover .heading_text::after {
+	width: 60%;
 }
 
-/* Mobile Phone */
+/* .service_heading {
+} */
+
+.heading_text::after {
+	content: "";
+	width: 0;
+	height: 4px;
+	margin: 5px auto;
+	display: block;
+	background-color: #00252a;
+	transition: 0.3s ease-in-out;
+}
+
+.services_tabs {
+	/* display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px; */
+}
+
+.services_tabs .bs-row {
+	position: relative;
+	justify-content: center;
+}
+
+.services_tabs .tabs {
+	line-height: 2;
+	position: relative;
+	border-radius: 30px;
+	box-shadow: -3px -3px 2px rgb(255, 255, 255), 5px 5px 5px rgba(0, 0, 0, 0),
+		5px 5px 15px rgba(0, 0, 0, 0.1);
+	margin: 20px 25px;
+	padding: 10px 0;
+	transition: 0.3s ease-in-out;
+	text-decoration: none;
+	overflow: hidden;
+	/* cursor: pointer; */
+}
+
+/* 
+I MAY USE THIS PROPERTIES TO GIVE A SCALE ANIMATION
+
+.services_tabs .tabs:hover {
+	transform: scale(1.05);
+} */
+
+.services_tabs .tabs .tabs-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: all 0.4s ease-in-out;
+}
+
+.services_tabs .tabs::before {
+	content: "";
+	height: 100%;
+	display: block;
+	border-radius: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.services_tabs .tab-1::before {
+	background: url("../images/wed-design-blueprint.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.services_tabs .tab-2::before {
+	background: url("../images/typer_on_computer.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.services_tabs .tab-3::before {
+	background: url("../images/wallgirl2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.services_tabs .tab-4::before {
+	background: url("../images/socials-in-hand.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.services_tabs .tabs:hover::before {
+	opacity: 1;
+	transform: scale(1.2); /*FOR SCALE ANIMATION ON THE BEFORE PROPERTY */
+}
+
+.services_tabs .tabs .wrap {
+	padding: 30px 15px;
+	position: relative;
+	z-index: 3;
+}
+
+.services_tabs .tabs:hover svg {
+	transform: translateY(-25px);
+	color: #fff;
+}
+
+.services_tabs .tabs svg {
+	font-size: 65px;
+	margin: 15px;
+	transition: 0.3s ease-in-out;
+}
+
+.services_tabs .tab-1 svg {
+	color: #ff1b41e5;
+}
+
+.services_tabs .tab-2 svg {
+	color: #0e76a8e5;
+}
+
+.services_tabs .tab-3 svg {
+	color: #ffbd1be5;
+}
+
+.services_tabs .tab-4 svg {
+	color: #34af9ae5;
+}
+
+.services_tabs .tabs .tabs_text {
+	width: 90%;
+	margin: auto;
+}
+
+.services_tabs .tabs .tabs_text h4 {
+	margin: 5px 0;
+	color: #00252a;
+	font-weight: 400;
+}
+
+.services_tabs .tabs .tabs_text p {
+	margin: 5px 0;
+	color: #555555;
+	padding: 15px 0;
+}
+
+.services_tabs .tab-2,
+.services_tabs .tab-4 {
+	-webkit-transform: translateY(3.5rem);
+	transform: translateY(3.5rem);
+	/* top: 3.5rem; */
+}
+
+.services_tabs .tabs:hover .tabs_text h4,
+.services_tabs .tabs:hover .tabs_text p {
+	color: #fff;
+}
+
+.services_tabs .tab-1:hover .tabs-overlay {
+	background-color: rgba(255, 27, 65, 0.714);
+}
+
+.services_tabs .tab-2:hover .tabs-overlay {
+	background-color: rgba(14, 118, 168, 0.714);
+}
+
+.services_tabs .tab-3:hover .tabs-overlay {
+	background-color: rgba(255, 189, 27, 0.714);
+}
+
+.services_tabs .tab-4:hover .tabs-overlay {
+	background-color: rgba(52, 175, 154, 0.714);
+}
+
+/********************** Why Us Section **********************/
+.explore_section {
+  /* height: 1000px;
+    position: relative;
+    z-index: 1; */
+  /* background: #00252a; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  margin: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* .explore_div {
+  margin: 20px auto;
+} */
+
+.explore_heading h3,
+.service_heading h3 {
+  font-size: 40px;
+  color: #00252a;
+  display: inline-block;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.explore_heading .explore_heading_text::after {
+  content: '';
+  width: 0;
+  height: 4px;
+  margin: 5px auto;
+  display: block;
+  background-color: #00252a;
+  transition: 0.3s ease-in-out;
+}
+
+.explore_tabs {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 30px auto;
+}
+
+.explore_before::before {
+  content: '';
+  width: 550px;
+  height: 550px;
+  background-color: #e5e5e580;
+  position: absolute;
+  right: -200px;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.explore_tabs .tab {
+  /* margin-right: 20px;
+    margin-bottom: 20px; */
+  /* background-color: #4A96A2; */
+  height: 300px;
+}
+
+.explore_tabs .tab1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  position: relative;
+  overflow: hidden;
+}
+
+.explore_tabs .tab1 video {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  bottom: 0;
+}
+
+.explore_tabs .tab1 .video_text_overlay {
+  background-color: #2bbcff93;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.explore_tabs .tab1:hover .video_text_overlay {
+  opacity: 1;
+  padding: 80px;
+  width: 80%;
+}
+
+/* I HAVE DECIDED TO REPLACE THEM WITH TEXT*/
+
+.explore_tabs .tab2 {
+  /* background-color: #d6c421; */
+  background-color: #ffbd1b;
+  position: relative;
+}
+
+.explore_tabs .tab2 h3,
+.explore_tabs .tab3 h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 55px;
+	font-weight: 400;
+  width: 100%;
+  color: #fff;
+}
+
+.explore_tabs .tab3 {
+  /* background-color: #6621d6; */
+  /* background-color: #ff6f1b; */
+  /* background-color: #7e1bff; */
+  background-color: #ff1b41;
+  position: relative;
+}
+
+.explore_tabs .tab4 {
+  background: url('../images/ladyoncomp.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.explore_tabs .tab5 {
+  /* background: url('../img/handshake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+  border: 5px solid #209b95;
+}
+
+/********************* Tablet *********************/
+@media (max-width: 990px) {
+	.services_tabs .tab-2,
+	.services_tabs .tab-4 {
+		transform: translateY(0rem);
+		/* top: 3.5rem; */
+	}
+
+	.explore_tabs .tab {
+    height: 175px;
+  }
+  .services_tabs .tab-2,
+  .services_tabs .tab-4 {
+    top: 0;
+  }
+  .explore_tabs .tab1 .video_text_overlay {
+    opacity: 1;
+  }
+  .explore_tabs .tab1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .explore_tabs .tab2,
+  .explore_tabs .tab3,
+  .explore_tabs .tab4,
+  .explore_tabs .tab5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .explore_tabs .tab h3 {
+    font-size: 35px;
+  }
+}
+
+/********************* Mobile Phone *********************/
 @media screen and (max-width: 768px) {
 	.hero-section {
 		background-position: center;
@@ -92,4 +456,15 @@
 		background-color: #ff4062;
 		padding: 15px 35px;
 	}
+	.services_tabs .tabs {
+		width: 100%;
+	}
 }
+
+/* Tablet */
+/* @media (max-width: 990px) {
+} */
+
+/* Mobile Phone */
+/* @media screen and (max-width: 768px) {
+} */

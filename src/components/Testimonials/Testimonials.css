@@ -1,0 +1,141 @@
+/* .carousel-inner {
+	background-color: blue;
+} */
+
+.carousel-item {
+	/* background-color: red; */
+	padding: 20px 150px;
+}
+
+.carousel-item p {
+	font-size: 45px;
+	color: #252525;
+	/* background-color: yellow; */
+	text-align: center;
+}
+
+.carousel-avatar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carousel-avatar img {
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	margin-right: 10px;
+}
+
+.carousel-avatar span {
+	color: #00252a;
+	font-size: 18px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	font-size: 40px;
+}
+
+.carousel-control-prev svg,
+.carousel-control-next svg {
+	color: #00252a;
+}
+
+.carousel_heading {
+	margin: 10px 0;
+	color: #00252a;
+	text-align: center;
+}
+
+.carousel_heading h3 {
+	font-size: 40px;
+	text-transform: capitalize;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 100%;
+	}
+	50% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0 100%;
+	}
+}
+
+.carousel_heading::after {
+	content: "";
+	display: block;
+	width: 300px;
+	height: 5px;
+	margin: auto;
+	background-image: linear-gradient(
+		to left,
+		#2ecc71,
+		#3498db,
+		#9b59b6,
+		#f36c12
+	);
+	/* -webkit-background-clip: text; */
+	animation: animate 5s linear infinite;
+	-webkit-background-size: 500%;
+	background-size: 500%;
+}
+
+/********************* Tablet *********************/
+@media (max-width: 990px) {
+  .carousel-item {
+    padding: 20px 100px;
+  }
+	.carousel-item p {
+		font-size: 35px;
+	}
+
+	.carousel-avatar img {
+		width: 45px;
+		height: 45px;
+	}
+
+	.carousel-avatar span {
+		font-size: 16px;
+	}
+
+	.carousel-control-prev,
+	.carousel-control-next {
+		font-size: 30px;
+	}
+}
+
+/********************* Mobile Phone *********************/
+@media screen and (max-width: 768px) {
+	.carousel_heading h3 {
+		font-size: 27px;
+	}
+	.carousel_heading::after {
+		width: 200px;
+		height: 3.5px;
+	}
+	.carousel-item {
+		padding: 15px 50px;
+	}
+
+	.carousel-item p {
+		font-size: 20px;
+	}
+
+	.carousel-avatar img {
+		width: 45px;
+		height: 45px;
+	}
+
+	.carousel-avatar span {
+		font-size: 14px;
+	}
+
+	.carousel-control-prev,
+	.carousel-control-next {
+		font-size: 25px;
+	}
+}

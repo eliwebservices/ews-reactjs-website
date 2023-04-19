@@ -23,7 +23,7 @@
 } */
 
 .footer_section {
-	width: 100%;
+	margin-top: 100px;
 	background: url("../../images/EWS-WEBSITE-FOOTER-grey.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -188,12 +188,6 @@
 	font-size: 16px;
 }
 
-.contact_info .footer_contact_container h5 {
-	font-size: 18px;
-	font-weight: 600;
-	color: #e8e8e8;
-}
-
 .contact_info .footer_contact_container p {
 	font-size: 18px;
 	font-weight: 400;
@@ -217,11 +211,23 @@
 	text-align: center;
 }
 
-/* Tablet */
+/********************* Tablet *********************/
 @media (max-width: 990px) {
+	.footer_section {
+		height: 410px;
+	}
+	.footer_content {
+		top: 70px;
+	}
+	.footer_section h5 {
+		font-size: 16px;
+	}
+	.logo-slogan p {
+		font-size: 14px;
+	}
 }
 
-/* Mobile Phone */
+/********************* Mobile Phone *********************/
 @media screen and (max-width: 768px) {
 	.footer_section {
 		/* overflow: hidden; */
