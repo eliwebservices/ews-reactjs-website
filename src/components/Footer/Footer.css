@@ -211,10 +211,32 @@
 	text-align: center;
 }
 
+/********************* Placeholder Newsletter From *********************/
+/* .footer_form div {
+	display: flex;
+} */
+.footer_form div input {
+	border: none;
+	border-radius: 9px;
+	padding: 5px;
+}
+.footer_form div button {
+	border: none;
+	border-radius: 9px;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 5px 50px;
+	margin-top: 7px;
+}
+.footer_form div div {
+	color: #ffffff !important;
+}
+/********************* Placeholder Newsletter From *********************/
+
 /********************* Tablet *********************/
 @media (max-width: 990px) {
 	.footer_section {
-		height: 410px;
+		height: 450px;
 	}
 	.footer_content {
 		top: 70px;
@@ -261,4 +283,19 @@
 		font-size: 15px;
 		letter-spacing: 3px;
 	}
+	/******************************************/
+	.footer_form div {
+		display: block;
+	}
+	.footer_form div input {
+		border-radius: 8px;
+		text-align: center;
+	}
+	.footer_form div button {
+		border: 0.9px solid #fff;
+		margin-top: 10px;
+		border-radius: 10px;
+		padding: 5px 50px;
+	}
+	/******************************************/
 }

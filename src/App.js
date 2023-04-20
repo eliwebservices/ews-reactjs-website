@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 // import Navbar from "./components/Navbar/Navbar";
@@ -13,6 +13,7 @@ import NoPage from "./pages/NoPage";
 
 function App() {
 	// const location = useLocation();
+	const location = useLocation();
 	return (
 		<div className="App">
 			{/* NAVBAR */}
@@ -20,7 +21,7 @@ function App() {
 
 			{/* PAGE TRANSITIONS */}
 			<AnimatePresence mode="wait" initial={false}>
-				<Routes>
+				<Routes key={location.pathname} location={location}>
 					<Route path="/" exact element={<Home />} />
 					<Route path="/portfolio" element={<Portfolio />} />
 					<Route path="/our-services" element={<Services />} />

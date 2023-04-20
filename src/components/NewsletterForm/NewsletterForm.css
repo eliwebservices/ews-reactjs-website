@@ -1,0 +1,20 @@
+.footer_form {
+	margin-top: 20px;
+}
+
+.footer_form form {
+	display: flex;
+	align-items: center;
+}
+
+.footer_form h5 {
+	/*color: #fff;     #00b1a8 */
+
+	color: #e8e8e8;
+}
+
+.form-control {
+	border: 2px solid #00252a91 !important;
+	border-radius: 10px 0px 0px 10px !important;
+	margin: 10px 0;
+}

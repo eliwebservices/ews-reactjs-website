@@ -12,8 +12,12 @@ import {
 	faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { Phone, MailOutlined } from "@mui/icons-material";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+// import NewsletterForm from "../NewsletterForm/NewsletterForm";
 
 const Footer = () => {
+	const url =
+	 	"https://eliwebservices.us21.list-manage.com/subscribe/post?u=f84148b25b8acf8d490a47ace&amp;id=3fba0eafd0&amp;f_id=000cb2e1f0";
 	return (
 		<div>
 			<Container fluid className="footer_section">
@@ -42,33 +46,21 @@ const Footer = () => {
 						<Col lg={4} md={6} className="contact_info">
 							<div className="footer_contact_container">
 								<h5>Contact us</h5>
-								<p><MailOutlined/> : info@eliwebservices.com</p>
+								<p>
+									<MailOutlined /> : info@eliwebservices.com
+								</p>
 								{/* <p>P.O BOX MS 102 MILE7, ACCRA-GHANA</p> */}
-								<p><Phone/> : +233(0)201599071</p>
+								<p>
+									<Phone /> : +233(0)201599071
+								</p>
 							</div>
 						</Col>
 
 						<Col lg={4} md={6} className="footer_form">
 							<h5>Subscribe to our newsletter</h5>
-							<form action="/" method="post">
-								<input
-									type="email"
-									name="email"
-									id=""
-									className="form-control"
-									placeholder="E-mail"
-									required
-									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-								/>
-								<button
-									type="submit"
-									className="btn"
-									id="subscribe_btn"
-									name="subscribe_btn"
-								>
-									Subscribe
-								</button>
-							</form>
+
+							<MailchimpSubscribe url={url} />
+							{/* <NewsletterForm /> */}
 						</Col>
 
 						<Col lg={12} md={12} sm={12} className="logo-slogan">
