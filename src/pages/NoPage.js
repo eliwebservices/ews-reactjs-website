@@ -37,7 +37,7 @@ const NoPage = () => {
 				mobileTab={{ marginLeft: open ? "0" : "100%" }}
 				closeDropdown={closeDropdown}
 			/>
-			<Container>
+			<Container className="nopage-container">
 				<Row className="page_404_text">Oops!</Row>
 				<Row>
 					<div className="page-404-image">

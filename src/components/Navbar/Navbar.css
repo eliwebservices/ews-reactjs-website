@@ -16,7 +16,7 @@ header.sticky {
 
 .navigation {
 	/* background: #1e1e1e; */
-	height: 100px;
+	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	/* padding: 0.5rem calc((100vw - 1000px) / 2); */
@@ -26,7 +26,7 @@ header.sticky {
 }
 
 .logo-container {
-	width: 10%;
+	width: 100px;
 }
 
 .logo-container img {
@@ -67,7 +67,8 @@ header.sticky {
 	text-decoration: none;
 	color: #00252a;
 	text-transform: capitalize;
-	font-size: 18px;
+	font-size: 16px;
+	font-weight: 500;
 }
 
 .navmenu a:hover {

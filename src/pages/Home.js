@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import MobileNavbar from "../components/MoblieNavbar/MobileNavbar";
@@ -62,10 +63,10 @@ const Home = () => {
 							Take your business to <span>new heights</span> with our{" "}
 							<span>software solutions</span>
 						</h1>
-						<div className="start-btn-div" data-aos="fade">
-							<a href="/contact-us" className="start-btn">
+						<div className="start-btn-div">
+							<Link to="/contact-us" className="start-btn">
 								Start Building Today
-							</a>
+							</Link>
 						</div>
 					</Col>
 					<div className="header_pic col-lg-4"></div>
@@ -182,20 +183,37 @@ const Home = () => {
 
 			{/* Where we're heading */}
 			<Container className="press" data-aos="fade">
-            <div className="press-title">
-                <h3>Where we're headed...</h3>
-                <p>Our goal is to be one of best software companies, not only in Africa, but in the world and to be
-                    featured
-                    in big tech press companies. Join us and become part of something bigger!</p>
-            </div>
-						<div className="press-imgs">
-							<img className="press-image" src="pressImages/TechCrunch.png" alt="tc-logo" />
-							<img className="press-image" src="pressImages/bizinsider.png" alt="biz-insider-logo" />
-							<img className="press-image" src="pressImages/mashable.png" alt="mashable-logo" />
-							<img className="press-image" src="pressImages/tnw.png" alt="tnw-logo" />
-						</div>
-            
-        </Container>
+				<div className="press-title">
+					<h3>Where we're headed...</h3>
+					<p>
+						Our goal is to be one of best software companies, not only in
+						Africa, but in the world and to be featured in big tech press
+						companies. Join us and become part of something bigger!
+					</p>
+				</div>
+				<div className="press-imgs">
+					<img
+						className="press-image"
+						src="pressImages/TechCrunch.png"
+						alt="tc-logo"
+					/>
+					<img
+						className="press-image"
+						src="pressImages/bizinsider.png"
+						alt="biz-insider-logo"
+					/>
+					<img
+						className="press-image"
+						src="pressImages/mashable.png"
+						alt="mashable-logo"
+					/>
+					<img
+						className="press-image"
+						src="pressImages/tnw.png"
+						alt="tnw-logo"
+					/>
+				</div>
+			</Container>
 			{/* Everything comes on top of this */}
 			<Footer />
 		</motion.div>
