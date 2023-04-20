@@ -19,6 +19,8 @@ import Wuvideo from "../images/team-video.mp4";
 // import Whyus from "../components/Whyus/Whyus";
 import Testimonials from "../components/Testimonials/Testimonials";
 // import ReactPlayer from "react-player";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
 	const [open, setOpen] = useState(false);
@@ -33,6 +35,10 @@ const Home = () => {
 
 	useEffect(() => {
 		document.title = "Home | Eli Web Services";
+	}, []);
+
+	useEffect(() => {
+		Aos.init({ duration: 2000 });
 	}, []);
 
 	return (
@@ -52,15 +58,11 @@ const Home = () => {
 				<div className="hero-overlay"></div>
 				<Container className="text_and_pic">
 					<Col lg={10} className="header_text">
-						<h1
-							className="wow fadeIn"
-							data-wow-duration="2s"
-							data-wow-delay="0.4s"
-						>
+						<h1 data-aos="fade">
 							Take your business to <span>new heights</span> with our{" "}
 							<span>software solutions</span>
 						</h1>
-						<div className="start-btn-div">
+						<div className="start-btn-div" data-aos="fade">
 							<a href="/contact-us" className="start-btn">
 								Start Building Today
 							</a>
@@ -74,17 +76,13 @@ const Home = () => {
 			<Container fluid className="services_section">
 				<Container className="what_we_offer">
 					<div className="service_heading">
-						<h3
-							className="heading_text wow fadeIn"
-							data-wow-duration="2s"
-							data-wow-delay="0.3s"
-						>
+						<h3 className="heading_text" data-aos="fade">
 							Services
 						</h3>
 					</div>
 					<Container fluid className="services_tabs">
 						<Row className="bs-row">
-							<Col lg={5} className="tabs tab-1 wow fadeInUp">
+							<Col lg={5} className="tabs tab-1" data-aos="fade">
 								<div className="tabs-overlay"></div>
 								<div className="wrap">
 									<FontAwesomeIcon icon={faPalette} />
@@ -98,7 +96,7 @@ const Home = () => {
 								</div>
 							</Col>
 
-							<Col lg={5} className="tabs tab-2 wow fadeIn">
+							<Col lg={5} className="tabs tab-2" data-aos="fade-up">
 								<div className="tabs-overlay"></div>
 								<div className="wrap">
 									<FontAwesomeIcon icon={faTools} />
@@ -114,7 +112,7 @@ const Home = () => {
 						</Row>
 
 						<Row className="bs-row">
-							<Col lg={5} className="tabs tab-3 wow fadeInUp">
+							<Col lg={5} className="tabs tab-3" data-aos="fade">
 								<div className="tabs-overlay"></div>
 								<div className="wrap">
 									<FontAwesomeIcon icon={faBullseye} />
@@ -128,7 +126,7 @@ const Home = () => {
 								</div>
 							</Col>
 
-							<Col lg={5} className="tabs tab-4 wow fadeIn">
+							<Col lg={5} className="tabs tab-4" data-aos="fade-up">
 								<div className="tabs-overlay"></div>
 								<div className="wrap">
 									<FontAwesomeIcon icon={faChartBar} />
@@ -147,23 +145,15 @@ const Home = () => {
 			</Container>
 
 			{/* Why Us Section */}
-			<section fluid className="explore_section">
+			<Container fluid className="explore_section">
 				<div className="explore_div">
 					<div className="explore_heading">
-						<h3
-							className="heading_text wow fadeIn"
-							data-wow-duration="2s"
-							data-wow-delay="0.3s"
-						>
+						<h3 className="heading_text" data-aos="fade">
 							Why Us?
 						</h3>
 					</div>
 					<div className="explore_before"></div>
-					<div
-						className="explore_tabs container wow fadeInUp"
-						data-wow-duration="2s"
-						data-wow-delay="0.3s"
-					>
+					<div className="explore_tabs container" data-aos="fade-up">
 						<div className="tab1 tab">
 							{/* <ReactPlayer controls={false} url={Wuvideo}/> */}
 							<video
@@ -174,37 +164,38 @@ const Home = () => {
 								muted
 							></video>
 						</div>
-						<div
-							className="tab2 tab wow fadeInUp"
-							data-wow-duration="2s"
-							data-wow-delay="0.3s"
-						>
+						<div className="tab2 tab" data-aos="fade-up">
 							<h3>We Bring Your Ideas To Life</h3>
 						</div>
-						<div
-							className="tab3 tab wow fadeInUp"
-							data-wow-duration="2s"
-							data-wow-delay="0.4s"
-						>
+						<div className="tab3 tab" data-aos="fade-up">
 							<h3>Because We Believe In Your Vision</h3>
 						</div>
-						<div
-							className="tab4 tab wow fadeInUp"
-							data-wow-duration="2s"
-							data-wow-delay="0.5s"
-						></div>
-						<div
-							className="tab5 tab wow fadeInUp"
-							data-wow-duration="2s"
-							data-wow-delay="0.6s"
-						></div>
+						<div className="tab4 tab" data-aos="fade-up"></div>
+						<div className="tab5 tab" data-aos="fade-up"></div>
 					</div>
 				</div>
-			</section>
+			</Container>
 
 			{/* <Whyus/> */}
 
 			<Testimonials />
+
+			{/* Where we're heading */}
+			<Container className="press" data-aos="fade">
+            <div className="press-title">
+                <h3>Where we're headed...</h3>
+                <p>Our goal is to be one of best software companies, not only in Africa, but in the world and to be
+                    featured
+                    in big tech press companies. Join us and become part of something bigger!</p>
+            </div>
+						<div className="press-imgs">
+							<img className="press-image" src="pressImages/TechCrunch.png" alt="tc-logo" />
+							<img className="press-image" src="pressImages/bizinsider.png" alt="biz-insider-logo" />
+							<img className="press-image" src="pressImages/mashable.png" alt="mashable-logo" />
+							<img className="press-image" src="pressImages/tnw.png" alt="tnw-logo" />
+						</div>
+            
+        </Container>
 			{/* Everything comes on top of this */}
 			<Footer />
 		</motion.div>

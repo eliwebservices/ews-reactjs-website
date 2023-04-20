@@ -6,17 +6,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Testimonials.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+// import Aos from "aos";
+// import "aos/dist/aos.css";
 
 function Testimonials() {
 	return (
-		<Container fluid>
-			<div class="carousel_heading">
-				<h3 class="wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
-					Client's words, not ours
-				</h3>
+		<Container fluid className="testmonial-section">
+			<div class="carousel_heading" data-aos="fade">
+				<h3>Client's words, not ours</h3>
 			</div>
 			<div class="testimonial_before"></div>
-			<Container>
+			<Container data-aos="fade">
 				<Carousel
 					indicators={false}
 					nextIcon={<FontAwesomeIcon icon={faAngleRight} />}

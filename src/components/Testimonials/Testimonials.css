@@ -1,6 +1,20 @@
 /* .carousel-inner {
 	background-color: blue;
 } */
+.testmonial-section {
+	margin-bottom: 50px;
+}
+.testimonial_before::before {
+	content: "";
+	width: 500px;
+	height: 500px;
+	background-color: #fff;
+	position: absolute;
+	border: 10px solid #e5e5e580;
+	left: -107px;
+	transform: rotate(45deg);
+	z-index: -2;
+}
 
 .carousel-item {
 	/* background-color: red; */
@@ -86,9 +100,9 @@
 
 /********************* Tablet *********************/
 @media (max-width: 990px) {
-  .carousel-item {
-    padding: 20px 100px;
-  }
+	.carousel-item {
+		padding: 20px 100px;
+	}
 	.carousel-item p {
 		font-size: 35px;
 	}
@@ -105,6 +119,11 @@
 	.carousel-control-prev,
 	.carousel-control-next {
 		font-size: 30px;
+	}
+	.testimonial_before::before {
+		width: 300px;
+		height: 300px;
+		border: 5px solid #e5e5e580;
 	}
 }
 
