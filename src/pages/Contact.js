@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 import MobileNavbar from "../components/MoblieNavbar/MobileNavbar";
+import { Container } from "react-bootstrap";
+import ContactForm from "../components/ContactForm/ContactForm";
+import "../css/Contact.css";
 
 const Contact = () => {
 	const [open, setOpen] = useState(false);
@@ -31,7 +34,19 @@ const Contact = () => {
 				mobileTab={{ marginLeft: open ? "0" : "100%" }}
 				closeDropdown={closeDropdown}
 			/>
-			<h1>Contact Us</h1>
+			<Container fluid>
+				<Container className="contactpage-container" data-scroll-section>
+					<div className="contactpage_text">
+						<h1 className="contactpage_title">
+							We are excited to work with <span className="youTxt">you.</span>
+						</h1>
+					</div>
+					<div className="contactpage-divider"></div>
+
+					{/* Contact Form */}
+					<ContactForm />
+				</Container>
+			</Container>
 			<Footer />
 		</motion.div>
 	);

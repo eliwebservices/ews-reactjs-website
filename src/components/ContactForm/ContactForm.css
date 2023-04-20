@@ -1,0 +1,101 @@
+.contact_form {
+	position: relative;
+	width: 45%;
+}
+
+.contact_form,
+.contact_form form {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+.name_email {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.form_name,
+.form_email,
+.company_name,
+.form_message,
+.send_btn {
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	outline: none;
+	font-size: 17px;
+	color: #00252a;
+	margin-bottom: 10px;
+	border-bottom: solid #00252a1f;
+	transition: all 0.5s ease-in-out;
+	border-radius: 0;
+}
+
+.form_name:focus,
+.form_email:focus,
+.company_name:focus,
+.form_message:focus {
+	border-bottom: solid #00252a;
+}
+
+.send_btn {
+	border-radius: 20px;
+}
+
+.form_name,
+.form_email {
+	padding: 20px 25px;
+	display: inline-block;
+	width: 49%;
+	/* margin-right: 5px; */
+}
+
+.company_name {
+	padding: 20px 25px;
+	display: inline-block;
+	width: 100%;
+}
+
+.form_message {
+	padding: 20px 25px;
+	resize: none;
+	width: 100%;
+}
+
+.attach_file_btn {
+	margin: 15px 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.attach_file_btn input {
+	display: none;
+}
+
+.attach_file_btn .file_custom_btn {
+	width: 40%;
+	border: none;
+	border-radius: 20px;
+	padding: 15px 0px;
+	font-size: 17px;
+	color: #000000;
+	background-color: #dedede;
+	text-align: center;
+}
+.attach_file_btn .message {
+	color: rgb(0, 0, 0);
+}
+
+.send_btn {
+	background: #000000;
+	color: #fff;
+	width: 100%;
+	padding: 15px 0;
+	cursor: pointer;
+}
