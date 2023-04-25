@@ -96,6 +96,7 @@ const ContactForm = () => {
 						id=""
 						ref={hiddenInputFile}
 						onChange={handleFileChange}
+            accept=".doc, .docx, .pdf, .png"
 					/>
 					<div className="file_custom_btn" onClick={handleFileUpload}>
 						Attach File

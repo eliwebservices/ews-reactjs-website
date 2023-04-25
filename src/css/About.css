@@ -1,7 +1,489 @@
-/* Tablet */
-/* @media (max-width: 990px) {
+.about-hero-container {
+	margin-top: 100px;
+	/* height: 100vh; */
+	overflow: hidden;
+}
+
+.hero_text_and_img {
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: 0px auto 80px auto;
+	max-width: 1176px;
+	width: 98%;
+}
+
+.about_hero_text h1 {
+	font-weight: 200;
+	font-size: 83px;
+}
+.about_hero_text span {
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.you-span {
+	color: transparent;
+	background-image: linear-gradient(
+		to left,
+		#2ecc71,
+		#3498db,
+		#9b59b6,
+		#f36c12
+	);
+	-webkit-background-clip: text;
+	animation: animate 5s linear infinite;
+	-webkit-background-size: 500%;
+	background-size: 500%;
+	/* text-transform: uppercase; */
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 100%;
+	}
+	50% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0 100%;
+	}
+}
+
+.hero_image {
+	text-align: center;
+	max-height: 100vh;
+	position: relative;
+}
+
+.cafe-guy-svg,
+.pink-circle-svg,
+.yello-circle-svg {
+	position: absolute;
+	/* left: 0; */
+}
+
+.cafe-guy-svg {
+	width: 160px;
+	top: 112px;
+	left: -40px;
+}
+.pink-circle-svg {
+	width: 130px;
+	left: -50px;
+	top: 282px;
+}
+.yello-circle-svg {
+	width: 75px;
+	top: 420px;
+	left: 35px;
+}
+.hero_image .big-img {
+	width: 450px;
+	position: relative;
+	right: -100px;
+	/* top: -100px; */
+}
+
+.about-timeline-section {
+	margin-top: 100px;
+	position: relative;
+}
+
+.about-timeline-section::before {
+	content: "";
+	width: 250px;
+	height: 250px;
+	display: block;
+	background: url("../images/aboutus-ellipse-red.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: -100px;
+	right: 0;
+	bottom: 600px;
+	opacity: 0.5;
+}
+
+.about-timeline-section .about-timeline-section-wrap {
+	justify-content: center;
+	align-items: center;
+}
+
+/* .content-text,
+.content-img {
+  display: inline-block;
 } */
 
+.about-timeline-section-wrap .content-text {
+	/* position: relative;
+  z-index: 2;
+  width: 40%;
+  margin: auto 20px; */
+}
+
+.about-timeline-section-wrap .content-text .yr_n_sol {
+	display: flex;
+	align-items: center;
+}
+
+.content-text .years h2,
+.content-text .solutions h2 {
+	color: #00252a;
+	font-size: 50px;
+	font-weight: 600;
+}
+
+.content-text .years p,
+.content-text .solutions p {
+	color: #8b8b8b;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.content-text .years,
+.content-text .solutions {
+	margin-right: 20px;
+}
+
+.content-text .as-a-company {
+	color: #474747;
+	font-size: 18px;
+	text-align: justify;
+}
+
+.content-img {
+	/* overflow: hidden;  */
+	/* width: 60%; */
+	/* height: 500px; */
+} /**/
+
+.content-img::before {
+	content: "";
+	width: 250px;
+	height: 250px;
+	display: block;
+	background: url("../images/green-circle-square.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 0;
+	bottom: 470px;
+	z-index: 1;
+	/* opacity: 0.5; */
+}
+
+.content-img .border-line {
+	/* height: 450px; */
+	border: 3px solid #5ab285;
+	border-radius: 75px;
+	position: relative;
+	/* box-shadow: 2px 2px 18px #a9a9a9d4; */
+}
+
+.content-img .border-line .image {
+	position: relative;
+	height: 100%;
+}
+
+.content-img .border-line .image img {
+	border-radius: 70px;
+	width: 100%;
+	height: inherit;
+	padding: 30px;
+	/* position: absolute; */
+}
+
+.core-value-section {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	padding: 0;
+	position: relative;
+}
+
+.value-content {
+	background: url("../images/guy-chatting-with-client.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 500px;
+	width: 100%;
+	margin: auto;
+	/* justify-content: center;
+	align-items: center; */
+	/* transform: rotateY(180deg); */
+}
+
+.core-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.946),
+		rgba(0, 0, 0, 0.666),
+		rgba(0, 0, 0, 0)
+	);
+}
+
+.core-value-text {
+	margin: auto 100px;
+	position: relative;
+	z-index: 2;
+	color: #fff;
+}
+
+.core-value-text h2 {
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.core-value-text p {
+	font-size: 22px;
+}
+
+.core-value-text .co-create {
+	/* text-transform: uppercase; */
+	font-weight: 900;
+	color: transparent;
+	background-image: linear-gradient(
+		to left,
+		#2ecc71,
+		#3498db,
+		#9b59b6,
+		#f36c12
+	);
+	-webkit-background-clip: text;
+	animation: animate 5s linear infinite;
+	-webkit-background-size: 500%;
+	background-size: 500%;
+}
+
+/************************ Our Calling ****************************/
+.our-calling-section {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.calling-content::before {
+	content: "Our Calling";
+	display: block;
+	font-size: 170px;
+	opacity: 0.07;
+	position: absolute;
+	top: -76px;
+	left: -170px;
+}
+
+.calling-text h2 {
+	font-size: 50px;
+	color: #00252a;
+}
+
+.calling-text p {
+	font-size: 20px;
+}
+
+.calling-image .image,
+.calling-image .image img {
+	width: 100%;
+}
+
+/********************* Tablet Landscape ************************/
+@media (max-width: 1194px) {
+	.about-timeline-section::before {
+		left: -100px;
+		bottom: 420px;
+	}
+	.content-img::before {
+		bottom: 310px;
+	}
+	.content-text .years h2,
+	.content-text .solutions h2 {
+		font-size: 45px;
+		font-weight: 500;
+	}
+
+	.content-text .years p,
+	.content-text .solutions p {
+		font-size: 26px;
+		font-weight: 500;
+	}
+
+	.content-text .years,
+	.content-text .solutions {
+		margin-right: 35px;
+	}
+	.content-img .border-line .image img {
+		padding: 20px;
+	}
+}
+
+/*************************** Tablet ***************************/
+@media (max-width: 990px) {
+	.cafe-guy-svg {
+		left: 110px;
+	}
+	.pink-circle-svg {
+		left: 120px;
+	}
+	.yello-circle-svg {
+		left: 195px;
+	}
+	.hero_image .big-img {
+		width: 450px;
+		position: relative;
+		right: -100px;
+		/* top: -100px; */
+	}
+	.about-hero-container {
+		margin-top: 150px;
+	}
+	.about_hero_text h1 {
+		text-align: center;
+		font-size: 83px;
+	}
+	.about-timeline-section::before {
+		display: none;
+	}
+	.content-img::before {
+		display: none;
+	}
+	.about-timeline-section-wrap .content-text .yr_n_sol {
+		justify-content: space-evenly;
+	}
+	.content-text .years h2,
+	.content-text .solutions h2 {
+		font-size: 40px;
+	}
+	.content-text .years p,
+	.content-text .solutions p {
+		font-size: 24px;
+	}
+
+	.content-text .years,
+	.content-text .solutions {
+		text-align: center;
+	}
+	.content-text .as-a-company {
+		text-align: center;
+	}
+	.content-img .border-line .image img {
+		padding: 20px;
+	}
+	.our-calling-section {
+		text-align: center;
+	}
+
+	.calling-content::before {
+		font-size: 100px;
+		top: -76px;
+		left: -70px;
+	}
+	.calling-text p {
+		text-align: justify;
+	}
+	/* .calling-image .image img{
+		transform: rotateY(180deg);
+	} */
+}
+
 /* Mobile Phone */
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+	.about-hero-container {
+		margin-top: 100px;
+	}
+	.about_hero_text h1 {
+		font-size: 65px;
+	}
+	.about_hero_text span {
+		font-weight: 700;
+	}
+	.hero_image {
+		display: none;
+	}
+	.about-timeline-section {
+		margin-top: 25px;
+		position: relative;
+	}
+	.content-text .years h2,
+	.content-text .solutions h2 {
+		font-size: 35px;
+	}
+	.content-text .years p,
+	.content-text .solutions p {
+		font-size: 20px;
+	}
+
+	.content-text .years,
+	.content-text .solutions {
+		text-align: center;
+		margin-right: 0;
+	}
+	.content-text .as-a-company {
+		text-align: center;
+	}
+	.content-img .border-line {
+		border-radius: 50px;
+	}
+	.content-img .border-line .image {
+		border-radius: inherit;
+	}
+	.content-img .border-line .image img {
+		padding: 8px;
+		border-radius: inherit;
+	}
+	.core-value-text {
+		margin: auto;
+		text-align: center;
+	}
+	.core-value-text h2 {
+		font-size: 35px;
+	}
+	.core-value-text p {
+		font-size: 18px;
+	}
+	.our-calling-section {
+		text-align: center;
+	}
+
+	.calling-content::before {
+		font-size: 70px;
+		top: -76px;
+		left: -35px;
+	}
+	.calling-text h2 {
+		font-size: 35px;
+	}
+	.calling-text p {
+		font-size: 18px;
+		text-align: justify;
+	}
+}
+
+/* .cafe-guy-svg {
+	width: 140px;
+	top: 39px;
+	left: -95px;
+}
+.pink-circle-svg {
+	width: 100px;
+	left: -90px;
+	top: 200px;
+}
+.yello-circle-svg {
+	width: 65px;
+	top: 323px;
+	left: -46px;
+}
+.hero_image .big-img {
+	width: 420px;
+	position: relative;
+	right: -10px;
 } */

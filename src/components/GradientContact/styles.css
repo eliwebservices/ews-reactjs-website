@@ -1,0 +1,43 @@
+.gradient-conatact-section {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.gradient-conatact-content {
+	max-width: 750px;
+	margin: auto;
+	background: linear-gradient(45deg, #ec6599, #4129ac);
+	padding: 50px 35px;
+	text-align: center;
+	color: #fff;
+	line-height: 4.3;
+	border-radius: 35px;
+}
+
+.gradient-conatact-content h2 {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.gradient-conatact-content a {
+	padding: 16px 20px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 25px;
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 768px) {
+	.gradient-conatact-content {
+		max-width: 350px;
+		padding: 35px 20px;
+	}
+	.gradient-conatact-content h2 {
+		font-size: 25px;
+	}
+	.gradient-conatact-content a {
+		padding: 14px 18px;
+	}
+}
