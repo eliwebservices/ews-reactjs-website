@@ -87,6 +87,7 @@
 	color: #000000;
 	background-color: #dedede;
 	text-align: center;
+	cursor: pointer;
 }
 .attach_file_btn .message {
 	color: rgb(0, 0, 0);

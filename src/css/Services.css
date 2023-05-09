@@ -1,7 +1,231 @@
+.services-hero {
+	height: 100vh;
+	background: url("../images/html-css-collage-concept-with-person.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-position: center; */
+	/* transform: rotateX(180deg); */
+	color: #00252a;
+	/* height: 100vh; */
+	position: relative;
+	z-index: 3;
+	transition: 0.3s ease-in-out;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.services-hero-wrap {
+	/* height: 100vh; */
+	/* background-color: blue; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	position: relative;
+}
+
+.services-hero-text h1 {
+	font-size: 83px;
+	font-weight: 200;
+}
+
+.services-hero-text span {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.services-hero-text .span-gradient-effect {
+	/* font-weight: 200; */
+	color: transparent;
+	background-image: linear-gradient(
+		to left,
+		#2ecc71,
+		#3498db,
+		#9b59b6,
+		#f36c12
+	);
+	-webkit-background-clip: text;
+	animation: animate 5s linear infinite;
+	-webkit-background-size: 500%;
+	background-size: 500%;
+}
+
+.services-hero-images {
+	display: none;
+}
+
+.services-hero-images img {
+	width: 400px;
+	height: 100%;
+	/* margin: 10px; */
+	/* float: right; */
+}
+
+.services-board {
+	position: relative;
+}
+
+.services-type-container {
+	position: relative;
+}
+
+.service-type {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.service-type .service-type-text h2 {
+	font-size: 70px;
+	font-weight: 700;
+	color: blue;
+}
+.service-type .service-type-text p {
+	font-size: 22px;
+	line-height: 2.1rem;
+	color: #5d5d5d;
+}
+.service-type .service-type-image {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding-top: 30px;
+}
+.service-type .service-type-image img {
+	width: 500px;
+	position: relative;
+}
+
+.design .service-type-image img {
+	width: 400px;
+}
+.development .service-type-image img {
+	width: 580px;
+}
+.branding .service-type-image p {
+	font-size: 50px;
+	font-weight: 800;
+	width: 70%;
+	color: transparent;
+	background-image: linear-gradient(
+		to left,
+		#2ecc71,
+		#3498db,
+		#ffd500,
+		#f3128e
+	);
+	-webkit-background-clip: text;
+	animation: animate 5s linear infinite;
+	-webkit-background-size: 500%;
+	background-size: 500%;
+}
+.business-marketing .service-type-image img {
+	width: 450px;
+}
+
+.service-type .service-type-text,
+.service-type .service-type-image {
+	/* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; */
+}
+
+.development::before {
+	content: "";
+	width: 44%;
+	height: 100%;
+	background: #17899858;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	border-radius: 0 20px 20px 0;
+}
+
+.development,
+.business-marketing {
+	flex-direction: row-reverse;
+}
+
+.design .service-type-text h2 {
+	color: #ff1b41;
+}
+.development .service-type-text h2 {
+	color: #0e77a8;
+}
+.branding .service-type-text h2 {
+	color: #ffbe1b;
+}
+.business-marketing .service-type-text h2 {
+	color: #34af9a;
+}
+
+/********************* Tablet Landscape ************************/
+@media (max-width: 1194px) {
+	/* .services-hero-text h1 {
+    font-size: 70px;
+    font-weight: 200;
+  } */
+	/* .services-hero-images img {
+    width: 160px;
+    height: 160px;
+  } */
+	.services-hero-text {
+		width: 95%;
+	}
+	.development::before {
+		width: 46%;
+	}
+	.branding .service-type-image p {
+		font-size: 45px;
+		width: 85%;
+	}
+}
+
 /* Tablet */
-/* @media (max-width: 990px) {
-} */
+@media (max-width: 990px) {
+	.services-hero-text h1 {
+		text-align: center;
+	}
+	.services-hero {
+		background-position: center;
+	}
+	.service-type .service-type-text h2 {
+		font-size: 60px;
+		text-align: center;
+	}
+	.service-type .service-type-text p {
+		font-size: 20px;
+		text-align: center;
+	}
+	.development::before {
+		display: none;
+	}
+}
 
 /* Mobile Phone */
-/* @media screen and (max-width: 768px) {
-} */
+@media screen and (max-width: 768px) {
+	.services-hero-text h1 {
+		font-size: 50px;
+	}
+	.service-type .service-type-text h2 {
+		font-size: 45px;
+	}
+	.service-type .service-type-text p {
+		font-size: 18px;
+		line-height: 1.8rem;
+	}
+	.design .service-type-image img {
+		width: 300px;
+	}
+	.development .service-type-image img {
+		width: 350px;
+	}
+	.branding .service-type-image p {
+		font-size: 35px;
+		width: 90%;
+		text-align: center;
+	}
+	.business-marketing .service-type-image img {
+		width: 350px;
+	}
+}

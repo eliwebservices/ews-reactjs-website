@@ -83,7 +83,7 @@ const About = () => {
 			<Container fluid className="about-timeline-section">
 				<Container>
 					<Row className="about-timeline-section-wrap">
-						<Col lg={4} className="content-text">
+						<Col lg={4} className="content-text" data-aos="fade">
 							<div className="yr_n_sol">
 								<div className="years">
 									<h2>1+</h2>
@@ -134,7 +134,7 @@ const About = () => {
 			{/*************************** Our Calling *****************************/}
 			<Container className="our-calling-section">
 				<Row className="calling-content">
-					<Col lg={6} className="calling-text">
+					<Col lg={6} className="calling-text" data-aos="fade">
 						<h2>Our Calling</h2>
 						<p>
 							Inspired by the passion to put Ghana on the pedestal of technology
