@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Services from "./pages/Services";
 import NoPage from "./pages/NoPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 	// const location = useLocation();
@@ -18,6 +19,9 @@ function App() {
 		<div className="App">
 			{/* NAVBAR */}
 			{/* <Navbar toggleBtn={toggleDropdown} /> */}
+
+			{/* ScrollToTop component inside App component */}
+			<ScrollToTop />
 
 			{/* PAGE TRANSITIONS */}
 			<AnimatePresence mode="wait" initial={false}>

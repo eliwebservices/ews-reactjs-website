@@ -1,7 +1,193 @@
-/* Tablet */
-/* @media (max-width: 990px) {
-} */
+.portfolio-container {
+	/* margin-top: 100px; */
+	height: 100vh;
+	margin-bottom: 50px;
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-container .pc-ab-img {
+	position: absolute;
+	border-radius: 50%;
+}
+
+.portfolio-container .pc-ab-img-1 {
+	top: 100px;
+	left: -100px;
+	width: 180px;
+	height: 180px;
+	background-color: #178b98;
+}
+.portfolio-container .pc-ab-img-2 {
+	top: 180px;
+	left: 450px;
+	width: 80px;
+	height: 80px;
+	background-color: #feb100;
+}
+.portfolio-container .pc-ab-img-3 {
+	top: -100px;
+	right: -80px;
+	width: 380px;
+	height: 380px;
+	background-color: #e51952;
+}
+.portfolio-container .pc-ab-img-4 {
+	top: 550px;
+	left: 250px;
+	width: 135px;
+	height: 135px;
+	background-color: #de4217;
+}
+.portfolio-container .pc-ab-img-5 {
+	top: 500px;
+	left: 770px;
+	width: 55px;
+	height: 55px;
+	background-color: #f78600;
+}
+.portfolio-container .pc-ab-img-6 {
+	top: 330px;
+	left: 1150px;
+	width: 210px;
+	height: 210px;
+	background-color: #34af80;
+}
+
+.portfolio-header-text {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.portfolio-header-text h1,
+.portfolio-header-text p {
+	text-transform: capitalize;
+}
+
+.portfolio-header-text h1 {
+	font-size: 83px;
+	font-weight: 200;
+}
+
+.portfolio-header-text h1 span {
+	font-weight: 700;
+	/* color: #00252a; */
+	/* mix-blend-mode: luminosity; */
+}
+
+.portfolio-header-text p {
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+}
+
+/********************* Tablet Landscape ************************/
+@media (max-width: 1194px) {
+	.portfolio-container .pc-ab-img-1 {
+		top: 100px;
+		left: -100px;
+		width: 170px;
+		height: 170px;
+	}
+	.portfolio-container .pc-ab-img-2 {
+		top: 200px;
+		left: 300px;
+		width: 70px;
+		height: 70px;
+	}
+	.portfolio-container .pc-ab-img-3 {
+		top: -120px;
+		right: -70px;
+		/* width: 380px;
+		height: 380px; */
+	}
+	.portfolio-container .pc-ab-img-4 {
+		top: 550px;
+		left: 100px;
+		width: 140px;
+		height: 140px;
+	}
+	.portfolio-container .pc-ab-img-5 {
+		top: 500px;
+		left: 620px;
+		width: 50px;
+		height: 50px;
+	}
+	.portfolio-container .pc-ab-img-6 {
+		top: 370px;
+		left: 990px;
+		width: 190px;
+		height: 190px;
+	}
+}
+
+/********************* Tablet ************************/
+@media (max-width: 990px) {
+	.portfolio-container .pc-ab-img-1 {
+		top: 250px;
+	}
+	.portfolio-container .pc-ab-img-2 {
+		top: 380px;
+	}
+	.portfolio-container .pc-ab-img-3 {
+		top: -120px;
+		right: -70px;
+	}
+	.portfolio-container .pc-ab-img-4 {
+		top: 750px;
+	}
+	.portfolio-container .pc-ab-img-5 {
+		top: 700px;
+		left: 500px;
+	}
+	.portfolio-container .pc-ab-img-6 {
+		top: 490px;
+		left: 630px;
+	}
+	.portfolio-header-text p {
+		letter-spacing: 0px;
+	}
+}
 
 /* Mobile Phone */
-/* @media screen and (max-width: 768px) {
-} */
+@media screen and (max-width: 768px) {
+	.portfolio-container .pc-ab-img-1 {
+		top: 250px;
+		left: -70px;
+		width: 120px;
+		height: 120px;
+	}
+	.portfolio-container .pc-ab-img-2 {
+		top: 500px;
+	}
+	.portfolio-container .pc-ab-img-3 {
+		top: -20px;
+		right: -70px;
+		width: 250px;
+		height: 250px;
+	}
+	.portfolio-container .pc-ab-img-4 {
+		top: 550px;
+		left: 10px;
+		background-color: #34af80;
+	}
+	.portfolio-container .pc-ab-img-5 {
+		display: none;
+	}
+	.portfolio-container .pc-ab-img-6 {
+		display: none;
+	}
+	.portfolio-header-text h1 {
+		font-size: 65px;
+	}
+	.portfolio-header-text p {
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: 0px;
+	}
+}
