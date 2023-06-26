@@ -31,10 +31,7 @@ const ContactForm = () => {
 						document.querySelector(".form").style.opacity = "1";
 						document.querySelector(".success_message").style.width = "0px";
 					}, 2000);
-					document.querySelector(".form_name").value = "";
-					document.querySelector(".form_email").value = "";
-					document.querySelector(".company_name").value = "";
-					document.querySelector(".form_message").value = "";
+					form.current.reset();
 				},
 				(error) => {
 					console.log(error.text);
