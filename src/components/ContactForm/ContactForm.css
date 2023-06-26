@@ -31,7 +31,7 @@
 	color: #00252a;
 	margin-bottom: 10px;
 	border-bottom: solid #00252a1f;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	border-radius: 0;
 }
 
@@ -99,4 +99,29 @@
 	width: 100%;
 	padding: 15px 0;
 	cursor: pointer;
+}
+
+.success_message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 0px;
+	overflow: hidden;
+	margin: auto;
+	transition: all 0.5s ease-in-out;
+}
+.success_message img {
+	width: 300px;
+}
+/* Mobile Device */
+@media screen and (max-width: 768px) {
+	.success_message img {
+		width: 180px;
+	}
 }
