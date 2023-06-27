@@ -67,7 +67,7 @@ const Portfolio = () => {
 					{Projects.map((project, index) => {
 						return (
 							<Row className="project-item">
-								<Col lg={6} md={5} className="project-info">
+								<Col lg={6} md={6} className="project-info">
 									<h3>{project.title}</h3>
 									<p>{project.description}</p>
 									<div className="projects-techs">
@@ -84,7 +84,7 @@ const Portfolio = () => {
 										/>
 									</a>
 								</Col>
-								<Col lg={6} md={7} className="project-image">
+								<Col lg={6} md={6} className="project-image">
 									<img src={project.image} alt="" />
 								</Col>
 							</Row>

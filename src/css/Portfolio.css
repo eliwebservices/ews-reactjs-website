@@ -246,6 +246,26 @@
 	.portfolio-header-text p {
 		letter-spacing: 0px;
 	}
+  .project-info h3 {
+		font-size: 18px;
+	}
+	.project-info p {
+		font-size: 14px;
+	}
+	.project-tech {
+		font-size: 10px;
+	}
+	.project-tech::before {
+		width: 5px;
+		height: 5px;
+	}
+	.view-project {
+		font-size: 14px;
+    width: 60%;
+	}
+  .view-project img{
+		width: 40px;
+	}
 }
 
 /* Mobile Phone */
