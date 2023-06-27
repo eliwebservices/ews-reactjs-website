@@ -14,6 +14,36 @@ import ProjectArrow from "../images/view-project-arrow.svg";
 import Projects from "../../src/data/ProjectsData";
 import GradientContact from "../components/GradientContact/GradientContact";
 
+//Project Display Card Template
+const ProjectPlate = ({ title, description, stacks, link, image }) => {
+	return (
+		<Row className="project-item">
+			<Col lg={6} md={6} className="project-info">
+				<h3>{title}</h3>
+				<p>{description}</p>
+				<div className="projects-techs">
+					{stacks.map((stack, index) => {
+						return <ProjectStack key={index} stack={stack} />;
+					})}
+				</div>
+				<a href={link} className="view-project">
+					View Project
+					<img src={ProjectArrow} alt="" className="view-project-arrow" />
+				</a>
+			</Col>
+			<Col lg={6} md={6} className="project-image">
+				<img src={image} alt="" />
+			</Col>
+		</Row>
+	);
+};
+
+//Project Stack Template
+const ProjectStack = ({ stack }) => {
+	return <div className="project-tech">{stack}</div>;
+};
+
+// Page Template
 const Portfolio = () => {
 	const [open, setOpen] = useState(false);
 
@@ -66,28 +96,14 @@ const Portfolio = () => {
 				<Container className="projects-list">
 					{Projects.map((project, index) => {
 						return (
-							<Row className="project-item">
-								<Col lg={6} md={6} className="project-info">
-									<h3>{project.title}</h3>
-									<p>{project.description}</p>
-									<div className="projects-techs">
-										{project.stacks.map((stack, index) => {
-											return <div className="project-tech">{stack}</div>;
-										})}
-									</div>
-									<a href={project.link} className="view-project">
-										View Project
-										<img
-											src={ProjectArrow}
-											alt=""
-											className="view-project-arrow"
-										/>
-									</a>
-								</Col>
-								<Col lg={6} md={6} className="project-image">
-									<img src={project.image} alt="" />
-								</Col>
-							</Row>
+							<ProjectPlate
+								key={index}
+								title={project.title}
+								description={project.description}
+								stacks={project.stacks}
+								link={project.link}
+								image={project.image}
+							/>
 						);
 					})}
 				</Container>
