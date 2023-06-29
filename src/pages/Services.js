@@ -10,6 +10,7 @@ import "../css/Services.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import GradientContact from "../components/GradientContact/GradientContact";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Services = () => {
 	const [open, setOpen] = useState(false);
@@ -67,7 +68,7 @@ const Services = () => {
 			</Container>
 
 			<Container fluid className="services-board">
-				<Container className="services-type-container">
+				<Container className="services-type-container" id="design">
 					<Row className="service-type design" data-aos="fade-up">
 						<Col lg={6} className="service-type-text">
 							<h2>Design.</h2>
@@ -78,12 +79,12 @@ const Services = () => {
 							</p>
 						</Col>
 						<Col lg={6} className="service-type-image">
-							<img src="accessimages/design-side-img.png" alt="" />
+							<LazyLoadImage src="accessimages/design-side-img.png" alt="" />
 						</Col>
 					</Row>
 				</Container>
 
-				<Container fluid className="services-type-container">
+				<Container fluid className="services-type-container" id="development">
 					<Row className="service-type development" data-aos="fade-up">
 						<Col lg={6} md={11} className="service-type-text">
 							<h2>Development.</h2>
@@ -95,12 +96,15 @@ const Services = () => {
 							</p>
 						</Col>
 						<Col lg={6} className="service-type-image">
-							<img src="accessimages/services-dv-side-img.png" alt="" />
+							<LazyLoadImage
+								src="accessimages/services-dv-side-img.png"
+								alt=""
+							/>
 						</Col>
 					</Row>
 				</Container>
 
-				<Container className="services-type-container">
+				<Container className="services-type-container" id="branding">
 					<Row className="service-type branding" data-aos="fade-up">
 						<Col lg={6} className="service-type-text">
 							<h2>Branding.</h2>
@@ -117,7 +121,7 @@ const Services = () => {
 					</Row>
 				</Container>
 
-				<Container fluid className="services-type-container">
+				<Container fluid className="services-type-container" id="business-marketing">
 					<Row className="service-type business-marketing" data-aos="fade-up">
 						<Col lg={6} md={11} className="service-type-text">
 							<h2>Business Marketing.</h2>
@@ -129,7 +133,7 @@ const Services = () => {
 							</p>
 						</Col>
 						<Col lg={6} className="service-type-image">
-							<img
+							<LazyLoadImage
 								src="accessimages/business-marketing-image-colored.png"
 								alt=""
 							/>

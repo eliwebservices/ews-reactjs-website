@@ -22,6 +22,7 @@ import Testimonials from "../components/Testimonials/Testimonials";
 // import ReactPlayer from "react-player";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Home = () => {
 	const [open, setOpen] = useState(false);
@@ -192,22 +193,22 @@ const Home = () => {
 					</p>
 				</div>
 				<div className="press-imgs">
-					<img
+					<LazyLoadImage
 						className="press-image"
 						src="pressImages/TechCrunch.png"
 						alt="tc-logo"
 					/>
-					<img
+					<LazyLoadImage
 						className="press-image"
 						src="pressImages/bizinsider.png"
 						alt="biz-insider-logo"
 					/>
-					<img
+					<LazyLoadImage
 						className="press-image"
 						src="pressImages/mashable.png"
 						alt="mashable-logo"
 					/>
-					<img
+					<LazyLoadImage
 						className="press-image"
 						src="pressImages/tnw.png"
 						alt="tnw-logo"

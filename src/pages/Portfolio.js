@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import ProjectArrow from "../images/view-project-arrow.svg";
 import Projects from "../../src/data/ProjectsData";
 import GradientContact from "../components/GradientContact/GradientContact";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 //Project Display Card Template
 const ProjectPlate = ({ title, description, stacks, link, image }) => {
@@ -28,11 +29,11 @@ const ProjectPlate = ({ title, description, stacks, link, image }) => {
 				</div>
 				<a href={link} className="view-project">
 					View Project
-					<img src={ProjectArrow} alt="" className="view-project-arrow" />
+					<LazyLoadImage src={ProjectArrow} alt="" className="view-project-arrow" />
 				</a>
 			</Col>
 			<Col lg={6} md={6} className="project-image">
-				<img src={image} alt="" />
+				<LazyLoadImage src={image} alt="" />
 			</Col>
 		</Row>
 	);

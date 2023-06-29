@@ -10,6 +10,7 @@ import "../css/About.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import GradientContact from "../components/GradientContact/GradientContact";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
 	const [open, setOpen] = useState(false);
@@ -53,25 +54,25 @@ const About = () => {
 					</Col>
 
 					<Col lg={5} className="hero_image">
-						<img
+						<LazyLoadImage
 							src="accessimages/happy-man-sitting-cafe-circle.png"
 							alt=""
 							className="cafe-guy-svg"
 							data-aos="fade-left"
 						/>
-						<img
+						<LazyLoadImage
 							src="accessimages/aboutpage-pick-circle.png"
 							alt=""
 							className="pink-circle-svg wow fadeInLeft"
 							data-aos="fade-right"
 						/>
-						<img
+						<LazyLoadImage
 							src="accessimages/aboutpage-yello-circle.png"
 							alt=""
 							className="yello-circle-svg wow fadeInUp"
 							data-aos="fade-up"
 						/>
-						<img
+						<LazyLoadImage
 							src="accessimages/handshake-with-peopleonlaptop.png"
 							alt=""
 							className="big-img"
@@ -104,7 +105,7 @@ const About = () => {
 						<Col lg={8} className="content-img">
 							<div className="border-line">
 								<div className="image">
-									<img
+									<LazyLoadImage
 										src="accessimages/women-looking-at-computer.jpg"
 										alt=""
 									/>
@@ -151,7 +152,7 @@ const About = () => {
 					</Col>
 					<Col lg={6} className="calling-image">
 						<div className="image">
-							<img src="accessimages/our-calling-side-pics.png" alt="" />
+							<LazyLoadImage src="accessimages/our-calling-side-pics.png" alt="" />
 						</div>
 					</Col>
 				</Row>
